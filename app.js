@@ -4,7 +4,8 @@ const app = express();
 
 const CLIENT_ID = '98bbc328-e7a6-4044-ba56-70c3b241631e';
 // const REDIRECT_URI = 'http://localhost:5173/patientlist';  // Ensure this matches what's registered in Cerner
-const REDIRECT_URI = 'http://ehr-ens.s3-website-us-east-1.amazonaws.com/patientlist';  // Ensure this matches what's registered in Cerner
+const REDIRECT_URI = 'http://ehr-ens.s3-website-us-east-1.amazonaws.com/';  // Ensure this matches what's registered in Cerner
+// const REDIRECT_URI = 'http://ehr-ens.s3-website-us-east-1.amazonaws.com/patientlist';  // Ensure this matches what's registered in Cerner
 
 app.get('/launch', (req, res) => {
     const fhirServerUrl = req.query.iss;
